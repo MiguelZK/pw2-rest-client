@@ -36,6 +36,7 @@ public class ServiceB {
         LOGGER.log(Level.INFO, "Received: {0} ", name);
         Person person = new Person();
         person.setName(name);
+        System.out.println("Java incomoda muita gente");
         return person;
     }
 
