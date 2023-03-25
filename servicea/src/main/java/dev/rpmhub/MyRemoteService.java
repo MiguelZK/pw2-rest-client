@@ -8,11 +8,11 @@ import javax.ws.rs.core.MediaType;
 
 import org.eclipse.microprofile.rest.client.inject.RegisterRestClient;
 
-@RegisterRestClient(baseUri = "http://localhost:4444/service")
+@RegisterRestClient(baseUri = "http://localhost:4444/serviceb")
 public interface MyRemoteService {
     
     @GET
     @Path("/person/{name}")
-    @Produces(MediaType.TEXT_PLAIN)
+    @Produces(MediaType.APPLICATION_JSON)
     public Person getPerson(@PathParam("name") String name);
 }
