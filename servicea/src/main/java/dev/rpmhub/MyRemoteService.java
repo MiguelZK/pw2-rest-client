@@ -14,5 +14,5 @@ public interface MyRemoteService {
     @GET
     @Path("/person/{name}")
     @Produces(MediaType.TEXT_PLAIN)
-    public String getPerson(@PathParam("name") String name);
+    public Person getPerson(@PathParam("name") String name);
 }
